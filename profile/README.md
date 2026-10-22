@@ -45,7 +45,10 @@ the application-specific logic and the user experience.
 
 **Model the process. Run it. Build on top of it.**
 
-## What can you build?
+<details>
+<summary><strong>What can you build with Netgrif?</strong></summary>
+
+### Use cases
 
 Netgrif fits applications where people, data and structured workflows meet.
 
@@ -57,7 +60,7 @@ Netgrif fits applications where people, data and structured workflows meet.
 | **Internal applications**        | Task-driven tools with forms, roles and permissions    |
 | **Custom workflow applications** | Domain-specific systems built with Java and Angular    |
 
-## Why build with Netgrif?
+### Why build with Netgrif?
 
 - **The model is the application.** What you design is what runs, so there is
   no gap between the process diagram and the implementation.
@@ -66,6 +69,8 @@ Netgrif fits applications where people, data and structured workflows meet.
 - **Familiar technologies.** Java, Spring Boot, Angular and REST APIs.
 - **Focus on what is unique.** Process execution, task lifecycle and data
   management are already there, so you do not have to rebuild them.
+
+</details>
 
 ---
 
@@ -77,7 +82,8 @@ Netgrif fits applications where people, data and structured workflows meet.
 | [**Application Engine**](https://github.com/netgrif/application-engine)   | Run Petriflow models and manage processes, cases, tasks, users and data.    |
 | [**Netgrif Components**](https://github.com/netgrif/components)           | Build Angular user interfaces connected to Netgrif Application Engine.      |
 
-### How the pieces fit together
+<details>
+<summary><strong>How the pieces fit together</strong></summary>
 
 ```text
               APPLICATION BUILDER
@@ -108,6 +114,8 @@ The **Application Engine** runs the model and manages its cases, tasks, users
 and data. **Netgrif Components** help you build the Angular application your
 users work with.
 
+</details>
+
 ---
 
 ## Try it in your browser
@@ -136,7 +144,8 @@ from one of the starter repositories:
 | [**nae-backend-application-starter**](https://github.com/netgrif/nae-backend-application-starter)   | Create a Java and Spring Boot backend powered by Netgrif Application Engine: your own logic, process execution and integrations. |
 | [**nae-frontend-application-starter**](https://github.com/netgrif/nae-frontend-application-starter) | Create an Angular frontend for Netgrif processes, cases, tasks and data, customized with Netgrif Components and your own code.   |
 
-### Typical workflow
+<details>
+<summary><strong>Typical development workflow</strong></summary>
 
 1. Design the process in Application Builder.
 2. Export the Petriflow model.
@@ -146,6 +155,8 @@ from one of the starter repositories:
 5. Extend and customize the application for your users.
 
 Each starter repository has its own setup instructions and requirements.
+
+</details>
 
 ---
 
@@ -163,11 +174,14 @@ Need a supported deployment or the Enterprise Edition?
 
 ---
 
-## Licensing
+<details>
+<summary><strong>Licensing</strong></summary>
 
 Netgrif Community Edition is published in the repositories of this organization.
 Each project has its own license, including the **NETGRIF Community License**.
 Check the license in each repository before you use, modify or deploy its software.
+
+</details>
 
 ---
 
