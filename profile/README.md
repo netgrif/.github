@@ -21,10 +21,10 @@
   <a href="https://platform.netgrif.cloud/"><strong>Documentation</strong></a>
 </p>
 
-![A Word request goes into the AI assistant and comes out as a running onboarding app](media/demo.gif)
+![One Petriflow model, built with Netgrif AI Code or in the Builder, runs in the engine and is used in the portal or through Netgrif AI Chat](media/demo.gif)
 
-<sub>A Word document from HR went in unedited. A few minutes later HR raises a request, the manager approves it and IT
-ticks off the accounts.</sub>
+<sub>One Petriflow model: built with AI or by hand in the Builder, used by clicking in the portal or by asking Netgrif
+AI Chat.</sub>
 
 ## What is Netgrif?
 
