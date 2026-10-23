@@ -4,191 +4,86 @@
   </a>
 </p>
 
-<h1 align="center">From business process to working application.</h1>
+<h1 align="center">Describe a business process. AI turns it into a running app.</h1>
 
 <p align="center">
-  Design workflows, forms, data and permissions in one executable model.<br>
-  Run them with Netgrif Application Engine and build applications around them.
+  Netgrif is the AI-native platform for process applications. Login, roles, forms, task lists,<br>
+  the portal and the database already run. AI writes only the process.
 </p>
 
 <p align="center">
+  <a href="https://github.com/netgrif/starter"><strong>Build with AI</strong></a>
+  ·
   <a href="https://builder.netgrif.cloud/modeler"><strong>Try the Builder</strong></a>
   ·
   <a href="https://etask.netgrif.cloud/"><strong>Live Engine</strong></a>
   ·
   <a href="https://platform.netgrif.cloud/"><strong>Documentation</strong></a>
-  ·
-  <a href="https://platform.netgrif.cloud/guides/"><strong>Tutorials and Guides</strong></a>
 </p>
 
----
+![A Word request goes into the AI assistant and comes out as a running onboarding app](media/demo.gif)
+
+<sub>A Word document from HR went in unedited. A few minutes later HR raises a request, the manager approves it and IT
+ticks off the accounts.</sub>
 
 ## What is Netgrif?
 
-**Netgrif is a platform for building process-driven applications.** You model
-the process once and the platform runs it. You do not have to build workflow,
-form and task-management mechanisms from scratch.
+A platform for process-driven applications. The process is written in
+[Petriflow](https://petriflow.org/#/), a language for object-centric processes based on Petri nets. One Petriflow
+model holds the workflow, the data and forms, the roles and permissions, and the actions. The Netgrif Application
+Engine runs it directly, so the model *is* the application.
 
-At its core is [Petriflow](https://petriflow.org/#/), a workflow language for
-modeling and executing process-centric objects based on Petri nets. A single
-Petriflow model describes:
+That is why AI works well here. It does not generate a whole application for you to review and secure. It writes one
+model that a person can read, the platform can check, and the engine runs as it is. AI is optional: the same process
+can be modeled by hand in the Builder and used by clicking in the portal.
 
-- **Processes and workflows**: how work moves between tasks and states.
-- **Data and forms**: the information users work with.
-- **Roles and permissions**: who can perform which tasks.
-- **Actions**: application-specific behavior attached to the process.
+## Build your first app with AI
 
-A Petriflow model is not documentation/specification that developers translate into code.
-Netgrif executes it directly. The platform handles process execution, case and
-task management, APIs and reusable frontend components. You stay in control of
-the application-specific logic and the user experience.
+**Netgrif AI Code** is your AI coding assistant, prepared for Netgrif. Start it for free on your own machine:
 
-**Model the process. Run it. Build on top of it.**
+1. **Start Netgrif.** Clone [**netgrif/starter**](https://github.com/netgrif/starter) and run `docker compose up -d`.
+2. **Describe your business problem.** Open the folder in Claude Code, Codex, Cursor, GitHub Copilot or Gemini CLI and
+   tell it what your business needs, or hand it a Word document you already have. It writes the process, checks it,
+   and deploys it after your yes. Then work in the app at http://localhost:4200.
 
-<details>
-<summary><strong>What can you build with Netgrif?</strong></summary>
+Step by step: [starter README](https://github.com/netgrif/starter#readme).
 
-### Use cases
+## Netgrif AI Suite <sub>beta</sub>
 
-Netgrif fits applications where people, data and structured workflows meet.
+| | For | What it does |
+|---|---|---|
+| **Netgrif AI Code** | developers | Builds and changes Netgrif apps from your coding assistant. Free on your machine with the starter. |
+| **Netgrif AI Chat** | people who use the apps | "What is waiting for me?", "Approve the one from ACME." Users work in the apps in plain language. |
 
-| Use case                         | Examples                                               |
-| -------------------------------- | ------------------------------------------------------ |
-| **Approval workflows**           | Purchase requests, leave approvals, expense reviews    |
-| **Case management**              | Service requests, complaints, internal cases           |
-| **Business operations**          | Onboarding, document processing, multi-step procedures |
-| **Internal applications**        | Task-driven tools with forms, roles and permissions    |
-| **Custom workflow applications** | Domain-specific systems built with Java and Angular    |
-
-### Why build with Netgrif?
-
-- **The model is the application.** What you design is what runs, so there is
-  no gap between the process diagram and the implementation.
-- **Visual modeling with developer control.** Design processes in the Builder,
-  then extend them with Petriflow actions and your own code.
-- **Familiar technologies.** Java, Spring Boot, Angular and REST APIs.
-- **Focus on what is unique.** Process execution, task lifecycle and data
-  management are already there, so you do not have to rebuild them.
-
-</details>
-
----
+The AI always acts as the signed-in person, with their roles and rights, and every change waits for their yes.
+Shared portals with your company login (SSO) and AI Chat are part of the Enterprise edition:
+[contact us](https://netgrif.com/contact-us/).
 
 ## The platform
 
-| Project                                                                   | What it does                                                                |
-| ------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| [**Application Builder**](https://github.com/netgrif/application-builder) | Design Petriflow processes, data, forms and roles visually in your browser. |
-| [**Application Engine**](https://github.com/netgrif/application-engine)   | Run Petriflow models and manage processes, cases, tasks, users and data.    |
-| [**Netgrif Components**](https://github.com/netgrif/components)           | Build Angular user interfaces connected to Netgrif Application Engine.      |
+| Project | What it does |
+|---|---|
+| [**Starter**](https://github.com/netgrif/starter) | Netgrif on your machine, ready for your AI assistant. |
+| [**Application Builder**](https://github.com/netgrif/application-builder) | Model Petriflow processes, forms and roles visually in the browser. |
+| [**Application Engine**](https://github.com/netgrif/application-engine) | Run Petriflow models: processes, cases, tasks, users and data. |
+| [**Netgrif Components**](https://github.com/netgrif/components) | Build your own Angular frontend on the engine. |
+| [**Petriflow**](https://github.com/petriflow/petriflow) | The process language: specification and Action API. |
 
-<details>
-<summary><strong>How the pieces fit together</strong></summary>
-
-```text
-              APPLICATION BUILDER
-             Visual process modeling
-                       │
-                       │ Export
-                       ▼
-                 PETRIFLOW MODEL
-          Process + Data + Forms + Roles
-                       │
-                       │ Load
-                       ▼
-              APPLICATION ENGINE
-              Java + Spring Boot
-          Process execution and APIs
-                       │
-                       │ REST APIs
-                       ▼
-             FRONTEND APPLICATION
-             Angular + Components
-                       │
-                       ▼
-                      USERS
-```
-
-You design the process in the **Builder**. The result is a **Petriflow** model.
-The **Application Engine** runs the model and manages its cases, tasks, users
-and data. **Netgrif Components** help you build the Angular application your
-users work with.
-
-</details>
-
----
-
-## Try it in your browser
-
-You can explore Netgrif without installing anything.
-
-1. Open the [Application Builder](https://builder.netgrif.cloud/).
-2. Create a process and add data, forms, roles and actions.
-3. Export the Petriflow model.
-
-If you want to see the end-user side first, open the
-[live engine](https://etask.netgrif.cloud/) and browse its processes, cases and tasks.
-
-For guided examples, visit the [Netgrif Platform documentation](https://platform.netgrif.cloud/guides/).
-
----
-
-## Build your own application
-
-We are publishing the **Netgrif Community Edition** and the developer
-tools you need to build and run your own process-driven applications. Start
-from one of the starter repositories:
-
-| Starter                                                                                             | Use it to                                                                                                                        |
-| --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| [**nae-backend-application-starter**](https://github.com/netgrif/nae-backend-application-starter)   | Create a Java and Spring Boot backend powered by Netgrif Application Engine: your own logic, process execution and integrations. |
-| [**nae-frontend-application-starter**](https://github.com/netgrif/nae-frontend-application-starter) | Create an Angular frontend for Netgrif processes, cases, tasks and data, customized with Netgrif Components and your own code.   |
-
-<details>
-<summary><strong>Typical development workflow</strong></summary>
-
-1. Design the process in Application Builder.
-2. Export the Petriflow model.
-3. Set up the backend and frontend from the starter repositories.
-4. Load the model into your Application Engine. See the
-   [Application Engine Documentation](https://platform.netgrif.cloud/).
-5. Extend and customize the application for your users.
-
-Each starter repository has its own setup instructions and requirements.
-
-</details>
-
----
+Need your own Java backend or Angular frontend? Start from
+[nae-backend-application-starter](https://github.com/netgrif/nae-backend-application-starter) and
+[nae-frontend-application-starter](https://github.com/netgrif/nae-frontend-application-starter).
 
 ## Learn and get help
 
-- [**Getting Started**](https://netgrif.com/get-started/): an introduction to the platform.
-- [**Petriflow Documentation**](https://petriflow.org/#/): language concepts, objects, actions and examples.
-- [**Application Engine Documentation**](https://platform.netgrif.cloud/): technical documentation and APIs.
-- [**Netgrif Academy**](https://platform.netgrif.cloud/guides/): tutorials, examples and learning materials.
-- [**Discussions**](https://github.com/netgrif/application-engine/discussions): questions, ideas and community conversations.
-- [**Issues**](https://github.com/netgrif/application-engine/issues): bug reports and technical problems.
+[Getting Started](https://netgrif.com/get-started/) ·
+[Petriflow docs](https://petriflow.org/#/) ·
+[Platform docs](https://platform.netgrif.cloud/) ·
+[Netgrif Academy](https://platform.netgrif.cloud/guides/) ·
+[Discussions](https://github.com/netgrif/application-engine/discussions) ·
+[Issues](https://github.com/netgrif/application-engine/issues) ·
+[Contact Netgrif](https://netgrif.com/contact-us/)
 
-Need a supported deployment or the Enterprise Edition?
-[Contact Netgrif](https://netgrif.com/contact-us/).
-
----
-
-<details>
-<summary><strong>Licensing</strong></summary>
-
-Netgrif Community Edition is published in the repositories of this organization.
-Each project has its own license, including the **NETGRIF Community License**.
-Check the license in each repository before you use, modify or deploy its software.
-
-</details>
-
----
-
-<p align="center">
-  <strong>Start with a process. Turn it into an application.</strong>
-</p>
-
-<p align="center">
-  <a href="https://builder.netgrif.cloud/modeler">Start building with Netgrif →</a>
-</p>
+<sub>**Licence.** Netgrif Community Edition is source-available, not open source, under the NETGRIF Community License.
+Its current version is free for development, testing and other non-production use; production needs a commercial
+licence. Projects can use different licence versions, so check each repository. The Petriflow specification is open
+source under Apache 2.0.</sub>
