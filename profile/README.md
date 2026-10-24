@@ -7,8 +7,9 @@
 <h1 align="center">Turn business processes into complete applications.</h1>
 
 <p align="center">
-  Describe a process with AI or draw it, and Netgrif runs it as a full application:<br>
-  user interface, backend and database included. No code to write for the three layers.
+  Describe a process to your AI assistant, or draw it, and Netgrif runs it as a complete application:<br>
+  user interface, backend and database, with users, roles and permissions built in.<br>
+  One model instead of three layers of code. Ready for enterprise use, open to your own Java and Angular code.
 </p>
 
 ---
