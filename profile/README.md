@@ -17,7 +17,7 @@
 
 > ### Recommended: [netgrif/ai-code](https://github.com/netgrif/ai-code), Netgrif AI Code
 >
-> The whole platform in Docker, ready for your AI coding assistant (Claude Code, Codex, Cursor, Copilot and others).
+> The whole platform in Docker, ready for any AI coding assistant (Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI or any other).
 > Describe a business process, or hand over a document you already have, and the assistant generates a complete
 > Netgrif application and runs it on your machine: workflow, data, forms, roles, actions and the menu. All you need
 > is Docker.
