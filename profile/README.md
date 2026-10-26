@@ -93,6 +93,6 @@ The people who use your Netgrif applications will be able to work in them by ask
 
 <sub>**Licence.** Netgrif Community Edition is source-available, not open source, under the NETGRIF Community License.
 Its current version is free for development, testing and other non-production use; production needs a commercial
-licence. Projects can use different licence versions, so check each repository. To buy a licence,
-[contact our sales team](https://netgrif.com/contact-us/). A self-service licence portal is coming:
+licence. Projects can use different licence versions, so check each repository. To buy a commercial
+licence, [contact our sales team](https://netgrif.com/contact-us/). A self-service licence portal is coming:
 [join the waiting list](https://netgrif.com/licence-waiting-list/).</sub>
