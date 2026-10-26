@@ -22,7 +22,7 @@
 > Netgrif application and runs it on your machine: workflow, data, forms, roles, actions and the menu. All you need
 > is Docker.
 >
-> **[Use this template →](https://github.com/netgrif/ai-code)**
+> **[Use this template →](https://github.com/netgrif/ai-code)** · [Watch it in two minutes](https://youtu.be/LpdUfdaEqT4)
 
 ---
 
