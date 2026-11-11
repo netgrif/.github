@@ -46,6 +46,9 @@ People are part of the process, not an add-on. An agent can only do what its rol
 and whatever the agent cannot solve goes to a person. At any moment you see where each case is and who holds the task.
 Unstructured work goes to agents, decisions stay with people, and the process stays in control.
 
+[Watch: AI agents inside real processes (2 minutes)](https://www.youtube.com/watch?v=Msmqxwey94g) ·
+[All Netgrif videos](https://www.youtube.com/playlist?list=PLG1XMpea4R_Y)
+
 ## Petriflow: object-centric process software engineering
 
 Most business applications are built around objects that live through a process: a request, an invoice, a contract.
