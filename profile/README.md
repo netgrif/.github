@@ -4,12 +4,12 @@
   </a>
 </p>
 
-<h1 align="center">Turn business processes into complete applications.</h1>
+<h1 align="center">People, AI agents and systems, orchestrated in one process.</h1>
 
 <p align="center">
-  One model instead of three layers of code.<br>
-  Describe a process to your AI assistant, or <a href="https://builder.netgrif.cloud/modeler">draw it in Builder</a>, and Netgrif runs it as a complete application:<br>
-  user interface, backend and database, with users, roles and permissions built in.<br>
+  Every step has an actor: a person, a system or an AI agent. A person always has the last word.<br>
+  The process is one model. Describe it to your AI assistant, or <a href="https://builder.netgrif.cloud/modeler">draw it in Builder</a>, and Netgrif runs it as a complete application:<br>
+  portal, forms, task lists, backend and database, with users, roles and permissions built in.<br>
   Ready for enterprise use, open to your own Java and Angular code.
 </p>
 
@@ -30,6 +30,21 @@
 
 <sub>A Petriflow model, written by AI or drawn in Builder, runs on the platform's three layers.
 [Which part of Netgrif is in which repository: watch on YouTube](https://youtu.be/Q0ZQIWlD9Kk)</sub>
+
+## People, AI agents and systems in one process
+
+A real process has steps, people, rules, data and exceptions. In Netgrif, every step is a task with a form, the data it
+works with and a role: who may do it. That role can belong to:
+
+| Actor | How it does its step |
+|---|---|
+| **A person** | in the eTask portal, or through a public form, always with their own login and rights |
+| **A system** | over REST or SOAP, with the systems you already run |
+| **An AI agent** | the task sends the case data to a language model and writes the answer back into the case. You give it the goal, the data and the role, not the steps. |
+
+People are part of the process, not an add-on. An agent can only do what its role allows, a person confirms its result,
+and whatever the agent cannot solve goes to a person. At any moment you see where each case is and who holds the task.
+Unstructured work goes to agents, decisions stay with people, and the process stays in control.
 
 ## Petriflow: object-centric process software engineering
 
